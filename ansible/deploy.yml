@@ -4,7 +4,7 @@
   tasks:
     - name: Pull latest Docker image
       docker_image:
-        name: greatvand/demo-app
+        name: bhaveshkapur/demo-app
         tag: "{{ lookup('env','GIT_COMMIT') }}"
         source: pull
 
