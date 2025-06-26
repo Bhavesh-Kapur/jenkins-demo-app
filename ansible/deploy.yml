@@ -17,7 +17,7 @@
     - name: Run new container
       docker_container:
         name: demo-app
-        image: greatvand/demo-app:{{ lookup('env','GIT_COMMIT') }}
+        image: bhaveshkapur/demo-app:{{ lookup('env','GIT_COMMIT') }}
         published_ports:
           - "80:3000"
         restart_policy: always
